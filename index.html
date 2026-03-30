@@ -1429,9 +1429,23 @@ function renderParentReport(student){
     <div class="cert-wrap">
       <div class="cert">
         <div class="cert-hdr">
-          <div class="cert-school">🏫 ${s.schName||"المدرسة"}</div>
-          <div class="cert-title">${s.sysName||"نظام الرصد المدرسي"} &nbsp;|&nbsp; ${s.year||""}</div>
-          <div style="font-size:13px;color:var(--text-s);margin-top:6px">تقرير أداء الطالب</div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px">
+            <!-- يسار: اسم المدرسة عربي وإنجليزي -->
+            <div style="text-align:right;flex:1">
+              <div style="font-size:14px;font-weight:900;color:#1a2332;line-height:1.4">مدرسة عبدالله بن تركي الابتدائية للبنين</div>
+              <div style="font-size:11px;font-weight:700;color:#444;margin-top:2px">Abdulla Bin Turky Primary school For Boys</div>
+            </div>
+            <!-- يمين: شعار وزارة التربية -->
+            <div style="text-align:left;flex:1;display:flex;flex-direction:column;align-items:flex-end">
+              <div style="font-size:13px;font-weight:800;color:#1a2332;line-height:1.4">وزارة التربيـة والتعليـم والتعليـم العالـي</div>
+              <div style="font-size:11px;font-weight:600;color:#444;margin-top:2px">Ministry of Education and Higher Education</div>
+              <div style="font-size:10px;color:#666">State of Qatar • دولـة قطـر</div>
+            </div>
+          </div>
+          <div style="border-bottom:1.5px solid #dde3ec;margin-bottom:8px"></div>
+          <div style="font-size:12px;font-weight:700;color:#e07b28;margin-bottom:4px">الرؤية: متعلم ريادي لتنمية مستدامة.</div>
+          <div class="cert-title">${s.year||""} &nbsp;|&nbsp; ${s.sysName||"نظام الرصد المدرسي"}</div>
+          <div style="font-size:14px;font-weight:900;color:#1d6fa4;margin-top:6px;background:#e8f4fd;padding:6px 16px;border-radius:8px;display:inline-block">التقرير السلوكي الأكاديمي (الثاني)</div>
         </div>
 
         <div class="cert-stu">
